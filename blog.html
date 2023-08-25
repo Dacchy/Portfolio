@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap CSS link -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- Bootstrap JS and Popper.js links -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+    <title>Daniel Dandys Personal Blog</title>
+    <style>
+        /* Additional inline styles for the welcome section */
+        #home {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f5f5f5; /* Adjust the background color as needed */
+        }
+
+        #home h2 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        #home p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            text-align: center;
+        }
+
+        .navbar-nav .nav-item.dropdown:hover .dropdown-menu {
+          display: block;
+        }
+
+        .dropdown-menu {
+          background-color: #333;
+        }
+
+        .dropdown-item {
+          color: #fff;
+        }
+
+        .dropdown-item:hover {
+          background-color: #555;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Personal Blog</h1>
+    </header>
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark sticky">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item active"><a class="nav-link" href="blog.html">Blog</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="gallery.html"dropdown" aria-haspopup="true" aria-expanded="false">
+                        Gallery
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="galleryDropdown">
+                        <a class="dropdown-item" href="galleryAchievements.html">Achievements</a>
+                        <a class="dropdown-item" href="galleryShowcase.html">Showcase</a>
+                        <a class="dropdown-item" href="galleryBeyond.html">Beyond</a>
+                    </div>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <main class="content">
+        <section class="animate-fade-in welcome-section">
+            <div class="container welcome-container">
+                <h1 class="welcome-title">Daniel Sembiring - IT Learning Portfolio</h1>
+                <div class="welcome-text">
+                    <p>Hello there! My name is Daniel Sembiring, but you can call me Dandy. I was born on March 30th, 2005, in Jayapura, Indonesia. As of now, I am 18 years old, and I find myself on an exciting journey of exploring the world of coding and IT.</p>
+                    <p>While some may say that I started exploring coding relatively late, I believe it's never too late to dive into something you're passionate about. I wish I had discovered coding earlier, but I'm making the most of the present moment. I'm fascinated by how code empowers us to create digital worlds and solve real-world problems.</p>
+                    <p>Currently, I'm pursuing my studies as a college student at ITB Stikom Bali. I'm enrolled in a program called Lithan EduCLasS, which is equipping me with the skills and knowledge necessary to excel in the IT industry. This journey is not just about learning the technical aspects; it's about developing a mindset of problem-solving and continuous learning.</p>
+                    <p>Originally hailing from Ambon, Indonesia, I now call Bali my home. Living in Bali provides me with the opportunity to attend ITB Stikom Bali and immerse myself in a vibrant tech community. Being surrounded by like-minded individuals and industry professionals fuels my passion for IT and motivates me to strive for excellence.</p>
+                    <p>When I first set foot into the world of coding, I was met with a mix of excitement and curiosity. It was like entering a realm where creativity and logic intertwine to build digital wonders. While I might have started a bit later than some, I quickly realized that age is just a number when it comes to learning something new.</p>
+                </div>
+                <button class="btn btn-primary btn-lg">
+                    <a href="galleryAchievements.html" class="text-white">
+                        See here for some of my achievements that I have achieved when I'm in Highschool.
+                    </a>
+                </button>
+            </div>
+        </section>
+        <section class="animate-fade-in skills-section">
+            <div class="container welcome-container">
+                <h2 class="section-title">Exploring the Coding Universe</h2>
+                <div class="skills-text">
+                    <p>I began with languages like HTML and CSS, which allowed me to craft visually appealing web pages. As I progressed, I delved into JavaScript to add interactivity and dynamic elements to my projects. The satisfaction of seeing a button respond to a click event or a form validation in action was incredibly rewarding.</p>
+                    <p>But I didn't stop there. I dabbled in Spring MVC and SpringBoot, exploring its versatility in tasks ranging from automation scripts to simple web apps. The thrill of seeing my ideas come to life through code kept me motivated to learn and experiment.</p>
+                    <p>Coding was not without its challenges. There were times when I faced bugs that seemed insurmountable, but the process of debugging and problem-solving became a crucial part of my learning journey. With every bug fixed, I gained a deeper understanding of the language and its intricacies.</p>
+                </div>
+                <button class="btn btn-primary btn-lg">
+                    <a href="galleryShowcase.html" class="text-white">
+                        Let's take a look at my gallery showcase of projects that I have created.
+                    </a>
+                </button>
+            </div>
+        </section>
+        <section class="animate-fade-in interests-section">
+            <div class="container welcome-container">
+                <h2 class="section-title">Beyond the Code</h2>
+                <div class="interests-text">
+                    <p>Beyond coding and learning, I have a range of interests that make me a well-rounded individual. Video games are a big part of my life, with titles like Team Fortress 2, Mobile Legends, and COD Mobile being some of my favorites. While I may not have a knack for singing, I do enjoy listening to music across various genres. And when it comes to staying active, I hit the basketball court to engage in some friendly competition.</p>
+                </div>
+                <button class="btn btn-primary btn-lg">
+                    <a href="galleryBeyond.html" class="text-white">
+                        Now click here if you want to know more about my lifestyle beyond coding.
+                    </a>
+                </button>
+            </div>
+        </section>
+    </main>
+    
+    
+    <footer>
+        <p>&copy; 2023 Daniel Dandy</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

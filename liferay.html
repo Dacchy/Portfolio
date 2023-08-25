@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap CSS link -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- Bootstrap JS and Popper.js links -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>Daniel Dandys Personal Blog</title>
+    <style>
+
+        * {
+          box-sizing:border-box;
+        }
+        
+        body {
+          margin: 0;
+          font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        .container {
+          padding: 64px;
+        }
+        
+        .row:after {
+          content: "";
+          display: table;
+          clear: both
+        }
+        
+        .column-66 {
+          float: left;
+          width: 66.66666%;
+          padding: 20px;
+        }
+        
+        .column-33 {
+          float: left;
+          width: 33.33333%;
+          padding: 20px;
+        }
+        
+        .large-font {
+          font-size: 48px;
+        }
+        
+        .xlarge-font {
+          font-size: 64px
+        }
+        
+        .button {
+          border: none;
+          color: white;
+          padding: 14px 28px;
+          font-size: 16px;
+          cursor: pointer;
+          background-color: #04AA6D;
+        }
+        
+        img {
+          display: block;
+          height: auto;
+          max-width: 100%;
+        }
+        
+        @media screen and (max-width: 1000px) {
+          .column-66,
+          .column-33 {
+            width: 100%;
+            text-align: center;
+          }
+          img {
+            margin: auto;
+          }
+        }
+
+        .navbar-nav .nav-item.dropdown:hover .dropdown-menu {
+          display: block;
+        }
+
+        .dropdown-menu {
+          background-color: #333;
+        }
+
+        .dropdown-item {
+          color: #fff;
+        }
+
+        .dropdown-item:hover {
+          background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Personal Blog</h1>
+    </header>
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark sticky">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+          <ul class="navbar-nav">
+              <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+              <li class="nav-item dropdown active">
+                  <a class="nav-link dropdown-toggle" href="gallery.html"dropdown" aria-haspopup="true" aria-expanded="false">
+                      Gallery
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="galleryDropdown">
+                      <a class="dropdown-item" href="galleryAchievements.html">Achievements</a>
+                      <a class="dropdown-item" href="galleryShowcase.html">Showcase</a>
+                      <a class="dropdown-item" href="galleryBeyond.html">Beyond</a>
+                  </div>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
+      </div>
+  </nav>
+    <section class="animate-fade-in">
+      <div style="text-align:center">
+          <h2>Daniel Dandy's Showcase</h2>
+          <h2>Liferay Project</h2>
+      </div>
+      <br><br><br>
+      <!-- #1 -->
+      <div class="container">
+          <div class="row">
+              <div class="column-66">
+                  <h1 class="xlarge-font"><b>Main Menu</b></h1>
+              </div>
+              <div class="column-33">
+                  <img src="images/Liferay.png" width="300" height="300">
+              </div>
+          </div>
+      </div>
+  </section>
+  
+  <!-- #2 -->
+  <section class="animate-fade-in">
+      <div class="container">
+          <div class="row">
+              <div class="column-33">
+                  <img src="images/Liferay order.png" alt="App" width="335" height="471">
+              </div>
+              <div class="column-66">
+                  <h1 class="xlarge-font"><b>Order Menu</b></h1>
+              </div>
+          </div>
+      </div>
+  </section>
+ 
+    <footer>
+        <p>&copy; 2023 Daniel Dandy</p>
+    </footer>
+    <script src="script.js"></script>
+    <!-- Bootstrap JS and Popper.js links -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

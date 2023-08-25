@@ -1,0 +1,273 @@
+/* Reset some default styles */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header, nav, main, footer {
+    padding: 20px;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+}
+
+nav {
+    background-color: #444;
+    color: #fff;
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 10px;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+/* Navbar */
+
+nav.sticky {
+    position: sticky;
+    top: 0;
+    background-color: #333;
+    z-index: 100;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+nav li {
+    margin: 0 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #f39c12;
+}
+
+
+section {
+    margin-top: 100px;
+}
+
+
+@media screen and (max-width: 768px) {
+    section {
+        margin-top: 80px;
+    }
+}
+
+/* Container Section */
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #cbc2c2;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.container h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.container h1 {
+    font-size: 3.5rem;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+.container p {
+    font-size: 1.2rem;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+.container .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.container .btn:hover {
+    background-color: #444;
+}
+
+.content {
+    padding: 50px 0 50px; 
+    background-color: #ffffff; 
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px; 
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #444;
+}
+
+
+.btn {
+    margin-top: 20px; 
+}
+
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #444;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade-in {
+    animation: fadeIn 1s ease-out;
+}
+
+footer {
+    margin-top: 70px; 
+}
+
+
+/* Button */
+
+.button-learnmore {
+    font-size: 16px;
+    font-weight: 200;
+    color: #fff;
+    letter-spacing: 1px;
+    padding: 13px 20px 13px;
+    outline: 0;
+    border: 1px solid rgb(255, 255, 255);
+    cursor: pointer;
+    position: relative;
+    background-color: rgba(0, 255, 200, 0);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .button-learnmore:after {
+    content: "";
+    background-color: #333;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    top: 7px;
+    left: 7px;
+    transition: 0.2s;
+  }
+  
+  .button-learnmore:hover:after {
+    top: 0px;
+    left: 0px;
+  }
+  
+  @media (min-width: 768px) {
+    .button-learnmore {
+      padding: 13px 50px 13px;
+    }
+  }
+
+  header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 50px; 
+    padding: 20px;
+    margin: 20px; 
+        }
+
+
+        nav.sticky {
+    position: sticky;
+     
+    background-color: #333;
+    z-index: 100;
+    border-radius: 50px; 
+    margin: 20px; /
+        }
+
+
+        section {
+    margin-top: 120px; 
+    margin: 20px; 
+        }
+
+  footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    border-radius: 50px; 
+    margin: 20px; 
+}
